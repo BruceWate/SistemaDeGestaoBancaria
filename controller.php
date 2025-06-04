@@ -1,10 +1,10 @@
 <?php
 session_start();
-require_once "conexao.php";  // inclui $conexao (mysqli)
+require_once "conector.php";  // inclui $conexao (mysqli)
 
 // Recebe dados do formulário
-$usuario = $_POST['usuario'] ?? '';
-$senha    = $_POST['senha']    ?? '';
+$usuario = $_POST['Iemal'] ?? '';
+$senha    = $_POST['Isenha']    ?? '';
 
 // Validação mínima (não deixe campos vazios)
 if (empty($usuario) || empty($senha)) {
