@@ -1,4 +1,4 @@
-<? php
+<?php
     mysqli_report(MYSQLI_REPORT_ERROR);
 
     $host = "localhost";
@@ -10,12 +10,10 @@
     $conexao = mysqli_connect($host, $user, $pass, $dbname, $port);
 
     if ($conexao -> connect_errno) {
-        echo "Conexao MySQL Falhou: " . $mysqli -> connect_error;
+        echo "Conexao MySQL Falhou: " .$mysqli -> connect_error;
         exit();
-        Jelse{
+    }else{
             echo "Conexao de PHP com MySQL feito com sucesso
             usando: ", $conexao->host_info;
-        }
     }
-
 ?>
