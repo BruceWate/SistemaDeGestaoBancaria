@@ -31,7 +31,7 @@ if ($result->num_rows === 1) {
         $_SESSION['usuario_email'] = $user['Email'];
         
         // Redireciona para área restrita/painel
-        header("Location: painel.php");
+        header("Location: MainPage.php");
         exit();
     } else {
         // senha incorreta

@@ -56,7 +56,7 @@ div#conteiner-login{
     transform: translate(-50%,-50%);
 }
 
-div#cont-mail> input#Iemail{
+div#cont-mail> input#usuario{
     margin-bottom: 12px;
     padding: 10px;
     border-radius: 10px;
