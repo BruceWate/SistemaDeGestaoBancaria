@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');  
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    background-image: linear-gradient(to left , var(--fundo), var(--fundo2))
+}
+
+:root{
+    --fundo:#FFFFFF;
+    --fundo2: #93C5FD;
+    --Login: #F9FAFB;
+    --borda: #E5E7EB;
+    --botaoLogin: #2563EB;
+    --cadastro: #60A5FA;
+}
+
+img{
+    width: 20px;
+}
+
+/*Icones */
+#login1{
+    position: absolute;
+    left: 10px;
+    transform: translateY(50%);
+}
+
+#senha{
+    position: absolute;
+    transform: translateY(50%);
+    left: 10px;
+}
+
+#bigUser{
+    width: 80px;
+    position: absolute;
+    top: -105px;
+    left: 95px;
+}
+
+
+
+
+div#conteiner-login{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+div#cont-mail> input#Iemail{
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 10px;
+    width:210px;
+    padding-left: 50px;
+    border-color: var(--borda);
+}
+
+div #cont-senha > input#Isenha{
+    margin-bottom: 20px;
+    width: 210px;
+    padding: 10px;
+    border-radius: 10px;
+    padding-left: 50px;
+    border-color: var(--borda);
+}
+
+div#cont-enviar > input#enviar{
+    width: 105px;
+    padding: 6px;
+    border-radius: 10px;
+    border-color: var(--borda);
+    background-color: var(--botaoLogin);
+    color: var(--Login);
+
+    position: relative;
+
+}
+
+div#cont-enviar > input#cadastro{
+    width: 105px;
+    padding: 6px;
+    border-radius: 10px;
+    border-color: var(--borda);
+    background-color: var(--cadastro);
+    color: var(--Login);
+
+    position: relative;
+    left: 53px;
+}
