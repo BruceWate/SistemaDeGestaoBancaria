@@ -13,6 +13,14 @@
     </header>
 
     <main class="painel">
+
+
+        <div class="card" onclick="location.href='adicionaSaldo.php'">
+<i class="fas fa-wallet icon"></i>
+    <h2>Adicionar Saldo</h2>
+    <p>Insira dinheiro na sua carteira virtual.</p>
+    </div>
+
         <div class="card" onclick="location.href='registarGasto.php'">
             <i class="fas fa-plus-circle icon"></i>
             <h2>Registrar Gasto</h2>
@@ -30,6 +38,8 @@
             <h2>Ver Orçamento</h2>
             <p>Acompanhe o total de gastos e saldo mensal.</p>
         </div>
+
+
     </main>
 </body>
 </html>
