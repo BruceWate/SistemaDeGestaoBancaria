@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Ver Gastos</title>
-    <link rel="stylesheet" href="folhasDeEstilo/main.css">
+    <link rel="stylesheet" href="../folhasDeEstilo/main.css">
 </head>
 <body>
     <div class="container">

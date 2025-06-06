@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Adicionar Saldo</title>
-    <link rel="stylesheet" href="folhasDeEstilo/adicionaSaldo.css">
+    <link rel="stylesheet" href="../folhasDeEstilo/adicionaSaldo.css">
 </head>
 <body>
     <div class="container">
