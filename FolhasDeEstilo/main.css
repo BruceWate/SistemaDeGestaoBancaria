@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+    --azul: #60A5FA;
+    --cinza-claro: #F3F4F6;
+    --cinza-escuro: #1F2937;
+    --branco: #FFFFFF;
+    --borda: #E5E7EB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to left, var(--branco), var(--azul));
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: var(--cinza-claro);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: var(--cinza-escuro);
+    margin-bottom: 20px;
+}
+
+.menu a {
+    display: block;
+    background-color: var(--azul);
+    color: var(--branco);
+    padding: 15px;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+.menu a:hover {
+    background-color: #3B82F6;
+}
+
+.formulario input,
+.formulario select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid var(--borda);
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.botoes input,
+.botoes button {
+    flex: 1;
+    padding: 10px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--azul);
+    color: var(--branco);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.botoes button:hover,
+.botoes input:hover {
+    background-color: #3B82F6;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid var(--borda);
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.orcamento p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+    --azul: #3B82F6;
+    --cinza-claro: #F9FAFB;
+    --cinza: #E5E7EB;
+    --cinza-escuro: #374151;
+    --branco: #FFFFFF;
+    --sombra: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, var(--branco), var(--azul));
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topo {
+    text-align: center;
+    margin-top: 40px;
+    color: var(--cinza-escuro);
+}
+
+.topo h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.topo p {
+    font-size: 1.1rem;
+    color: #6B7280;
+}
+
+.painel {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px;
+    max-width: 1000px;
+}
+
+.card {
+    background-color: var(--cinza-claro);
+    width: 280px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px var(--sombra);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+    font-size: 40px;
+    color: var(--azul);
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--cinza-escuro);
+}
+
+.card p {
+    color: #6B7280;
+    font-size: 0.95rem;
+}
+
