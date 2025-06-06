@@ -9,7 +9,7 @@
 <body>
     <div id="conteiner-login">
         <img id="bigUser" src="../Icons/user.png" alt="BigUser">
-        <form action="Login.php" method="post">
+        <form action="../backend/login.php" method="post">
 
             <div 
             id="cont-mail">
