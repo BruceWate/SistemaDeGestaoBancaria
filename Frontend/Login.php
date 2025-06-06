@@ -13,11 +13,11 @@
 
             <div 
             id="cont-mail">
-            <img id="login1" src="../Icons/userSmall.png" alt="log"><input type="email" name="Iemail"  id="Iemail" placeholder="Email">
+            <img id="login1" src="../Icons/userSmall.png" alt="log"><input type="email" name="Iemail"  id="Iemail" placeholder="Email" required>
             </div>
 
             <div 
-            id="cont-senha"> <img id="senha" src="../Icons/senha.png" alt="senha"><input type="password" name="Isenha" id="Isenha" placeholder="Senha">
+            id="cont-senha"> <img id="senha" src="../Icons/senha.png" alt="senha"><input type="password" name="Isenha" id="Isenha" placeholder="Senha" required>
             </div>
 
             <div id="cont-enviar">
