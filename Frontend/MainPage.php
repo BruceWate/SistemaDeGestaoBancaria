@@ -9,6 +9,7 @@
 </head>
 
 <body>
+<<<<<<< HEAD
     <p>
         <?php session_start();
         if (isset($_SESSION['id'])) {
@@ -20,6 +21,23 @@
     <header class="topo">
         <h1>Gerenciador de Gastos</h1>
         <p>Controle seu dinheiro de forma simples e eficiente.</p>
+=======
+   <header class="topo">
+    <h1>Gerenciador de Gastos</h1>
+    <p>Controle seu dinheiro de forma simples e eficiente.</p>
+    <div class="logout" style="
+    position: absolute;
+    display: block;
+    top: 1em;
+    left: 47em;
+">
+        <a href="Login.php" class="logout-btn">
+            <i class="fas fa-sign-out-alt"></i> Logout
+        </a>
+    </div>
+</header>
+</p>
+>>>>>>> upstream/main
     </header>
 
     <main class="painel">
