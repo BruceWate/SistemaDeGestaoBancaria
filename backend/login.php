@@ -1,12 +1,14 @@
 <?php
 include '../conexao/conector.php';
 
+session_start();
+
 $email = $_POST['Iemail'];
 $senha = $_POST['Isenha'];
 
-$sql = "SELECT * FROM Usuario WHERE Email = ?";
-$stmt = mysqli_prepare($conexao, $sql);
-mysqli_stmt_bind_param($stmt, "s", $email);
+$sql = "SELECT *FROM usuario WHERE email = ?";
+$stmt = mysqli_prepare($conexao,$sql);
+mysqli_stmt_bind_param($stmt,"s",$email);
 mysqli_stmt_execute($stmt);
 $result = mysqli_stmt_get_result($stmt);
 
@@ -14,6 +16,7 @@ if (mysqli_num_rows($result) === 1) {
     $usuario = mysqli_fetch_assoc($result);
 
     if ($usuario['Senha'] === $senha) {
+        $_SESSION['id'] = $usuario['id'];
         header("Location: ../Frontend/MainPage.php");
         exit();
     } else {
@@ -22,4 +25,3 @@ if (mysqli_num_rows($result) === 1) {
 } else {
     echo "<script>alert('Usuário não encontrado!'); window.location.href='login.php';</script>";
 }
-?>

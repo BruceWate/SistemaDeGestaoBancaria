@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <title>Página Principal</title>
     <link rel="stylesheet" href="../folhasDeEstilo/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
+    <p>
+        <?php session_start();
+        if (isset($_SESSION['id'])) {
+            echo "Bem-vindo, " . $_SESSION['id'];
+        } else {
+            echo "Voce nao esta logado!";
+        } ?>
+    </p>
     <header class="topo">
         <h1>Gerenciador de Gastos</h1>
         <p>Controle seu dinheiro de forma simples e eficiente.</p>
@@ -16,10 +26,10 @@
 
 
         <div class="card" onclick="location.href='adicionaSaldo.php'">
-<i class="fas fa-wallet icon"></i>
-    <h2>Adicionar Saldo</h2>
-    <p>Insira dinheiro na sua carteira virtual.</p>
-    </div>
+            <i class="fas fa-wallet icon"></i>
+            <h2>Adicionar Saldo</h2>
+            <p>Insira dinheiro na sua carteira virtual.</p>
+        </div>
 
         <div class="card" onclick="location.href='registarGasto.php'">
             <i class="fas fa-plus-circle icon"></i>
@@ -42,4 +52,5 @@
 
     </main>
 </body>
+
 </html>

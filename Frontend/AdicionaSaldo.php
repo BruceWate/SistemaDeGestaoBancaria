@@ -8,7 +8,7 @@
 <body>
     <div class="container">
         <h1>Adicionar Saldo</h1>
-        <form action="processarSaldo.php" method="post" class="form-saldo">
+        <form action="../backend/saldo.php" method="post" class="form-saldo">
             <label for="valor">Valor a adicionar (MZN):</label>
             <input type="number" name="valor" id="valor" placeholder="Ex: 1000" step="0.01" required>
 
