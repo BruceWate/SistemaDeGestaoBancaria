@@ -3,7 +3,7 @@ mysqli_report(MYSQLI_REPORT_ERROR);
 
 $host = "localhost";
 $user = "root";
-$pass = "12345678";
+$pass = "Oseunome10";
 $dbname = "gestaodefundos";
 $port = 3306;
 

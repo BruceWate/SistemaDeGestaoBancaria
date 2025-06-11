@@ -191,3 +191,10 @@ body {
     font-size: 0.95rem;
 }
 
+.logout{
+    position: absolute;
+    display: block;
+    top: 1em;
+    left: 47em;
+        
+}
