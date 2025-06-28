@@ -4,7 +4,7 @@ mysqli_report(MYSQLI_REPORT_ERROR);
 $host = "localhost";
 $user = "root";
 $pass = "Oseunome10";
-$dbname = "gestaodefundos";
+$dbname = "GestaoDeFundos";
 $port = 3306;
 
 $conexao = mysqli_connect($host, $user, $pass, $dbname, $port);

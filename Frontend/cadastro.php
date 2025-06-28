@@ -9,6 +9,7 @@
 <body>
     <div id="conteiner-login">
         <img id="bigUser" src="../Icons/user.png" alt="BigUser">
+
         <form action="../backend/cadastro.php" method="post">
             
             <div id="cont-nome">
@@ -32,7 +33,7 @@
         
             <div id="cont-enviar">
                 <input id="enviar" type="submit" value="Cadastrar">
-                <input id="cancelar" type="reset" value="Voltar" onclick="window.location.href='login.php'">
+                <input id="cancelar" type="reset" value="Voltar" onclick="window.location.href='index.php'">
             </div>
         </form>
     </div>

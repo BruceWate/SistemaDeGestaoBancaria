@@ -14,6 +14,8 @@ if (mysqli_num_rows($result) === 1) {
     $usuario = mysqli_fetch_assoc($result);
 
     if ($usuario['Senha'] === $senha) {
+        session_start();
+        $_SESSION['usuario_id'] = $usuario['id']; 
         header("Location: ../Frontend/MainPage.php");
         exit();
     } else {

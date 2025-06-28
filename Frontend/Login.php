@@ -22,7 +22,7 @@
 
             <div id="cont-enviar">
                 <input id="enviar" type="submit" value="Login">
-                <input id="cadastro" type="button" value="Cadastro" onclick="window.location.href='cadastro.php'">
+                <input id="cadastro" type="button" value="Voltar" onclick="window.location.href='index.php'">
             </div>
         </form>
     </div>
